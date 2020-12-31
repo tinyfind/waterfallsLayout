@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .father {
+
+            margin: 0 auto;
+            position: relative;
+
+        }
+
+        .father div {
+            border-radius: 15px;
+            box-shadow: 0px 10px 10px rgba(51, 51, 51, 0.445);
+            transition: .3s;
+        }
+
+        .father div:hover {
+            transform: scale(1.03) translateY(-4px)
+        }
+
+        .son1 {
+
+            position: absolute;
+            background: url(./image/1.png);
+            background-size: 100% 100%;
+
+            overflow: hidden;
+
+        }
+
+        .son2 {
+
+            position: absolute;
+            background: url(./image/2.png);
+            background-size: 100% 100%;
+
+            overflow: hidden;
+
+        }
+
+        .son3 {
+
+            position: absolute;
+            background: url(./image/3.png);
+            background-size: 100% 100%;
+
+            overflow: hidden;
+        }
+
+        .son4 {
+            position: absolute;
+            background: #fff;
+            overflow: hidden;
+            font-size: 12px;
+            color: #031a15;
+            font-weight: 600;
+
+        }
+
+        .son4::before {
+            content: "";
+            display: inline-block;
+
+            width: 45%;
+            height: 100%;
+            background: url(./image/4.png);
+            background-size: 100% 100%;
+            vertical-align: -40px;
+            margin-right: 10px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="top"></div>
+    <div class="bg"></div>
+
+    <div class="content"></div>
+
+
+
+
+</body>
+<script src="./main.js"></script>
+
+</html>
